@@ -1,0 +1,11 @@
+[functions]
+  directory = "netlify/functions"
+
+[build]
+  command = "vite build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
